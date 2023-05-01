@@ -1,19 +1,31 @@
-interface TweetProps {
-  user: string;
-  children: string;
-  likes?: number;
-}
+import { ArrowsClockwise, ChatCircle, Heart } from "phosphor-react";
+import "./Tweet.css";
 
-// const tweetStyles = {
-//   borderRadius: 8
-// }
-
-export function Tweet(props: TweetProps) {
+export function Tweet() {
   return (
-    <div className="tweet" style={{ borderRadius: 8 }}>
-      <strong>{props.user}</strong>
-      <p>{props.children}</p>
-      <button>Like{props.likes ?? 0}</button>
-    </div>
+    <a href="#" className="tweet">
+      <img src="https://github.com/jakeliny.png" alt="Jakeliny Gracielly" />
+      <div className="tweet-content">
+        <div className="tweet-content-header">
+          <strong>Jakeliny Gracielly</strong>
+          <span>@Jakelinygr</span>
+        </div>
+        <p>Meu primeiro Tweet.</p>
+        <div className="tweet-content-footer">
+          <button type="button">
+            <ChatCircle />
+            20
+          </button>
+          <button type="button">
+            <ArrowsClockwise />
+            20
+          </button>
+          <button type="button">
+            <Heart />
+            20
+          </button>
+        </div>
+      </div>
+    </a>
   );
 }
