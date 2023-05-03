@@ -39,78 +39,9 @@ a {
   grid-template-columns: 300px 1fr;
 }
 
-.sidebar {
-  padding: 1.5rem 1.25rem; /*24px 20px*/
-  display: flex;
-  flex-direction: column;
-  gap: 2rem; /*32px*/
-}
-
-.sidebar .logo {
-  width: 2rem; /*32px*/
-  height: 2rem; /*32px*/
-}
-
-.sidebar .new-tweet {
-  background: var(--twitter-blue);
-  border-radius: 9999px;
-  padding: 1rem; /*16px*/
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  color: #fff;
-  font-size: 1.25rem; /*20px*/
-  font-weight: 900;
-  border: 0;
-}
-
-.sidebar .new-tweet:hover {
-  filter: brightness(0.9);
-}
-
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem; /*32px*/
-}
-
-.main-navigation a {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem; /*20px*/
-  font-size: 1.25rem; /*20px*/
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.main-navigation a.active {
-  color: var(--twitter-blue);
-}
-
-.main-navigation a svg {
-  width: 2rem; /*32px*/
-  height: 2rem; /*32px*/
-}
-
 .content {
   border-left: 1px solid #ebeef0;
   border-right: 1px solid #ebeef0;
-}
-
-.timeline-header {
-  padding: 1.5rem 1.25rem; /*24px*/ /*20px*/
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.25rem; /*20px*/
-  font-weight: 700;
-  border-bottom: 1px solid #ebeef0;
-}
-
-.timeline-header svg {
-  width: 1.5rem; /*24px*/
-  height: 1.5rem; /*24px*/
-  color: var(--twitter-blue);
 }
 
 .new-tweet-form {
@@ -161,11 +92,4 @@ a {
 
 .new-tweet-form button[type="submit"]:hover {
   filter: brightness(0.9);
-}
-
-.separator {
-  background: #f7f9fa;
-  border-top: 1px solid #ebeef0;
-  border-bottom: 1px solid #ebeef0;
-  height: 0.75rem; /*12px*/
 }
