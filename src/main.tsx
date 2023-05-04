@@ -6,6 +6,12 @@ import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
 import { Separator } from "./components/Separator";
 
+const tweets = [
+  'Meu primeiro Tweet',
+  'Teste.',
+  'Deu certo tweetar!'
+]
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <div className="layout">
@@ -25,10 +31,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             <button type="submit">Tweet</button>
           </form>
           <Separator />
-          <Tweet />
-          <Tweet />
-          <Tweet />
-          <Tweet />
+          {tweets.map(tweet => {
+            return <Tweet key={tweet} content={tweet}/>
+          })}
         </main>
       </div>
     </div>
