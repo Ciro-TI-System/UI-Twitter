@@ -1,9 +1,8 @@
-import { Sidebar } from '../components/Sidebar';
+import { Sidebar } from "../components/Sidebar";
 import { Outlet } from "react-router-dom";
-import { router } from "../routes";
 
 export function Default() {
-  return(
+  return (
     <div className="layout">
       <Sidebar />
 
@@ -11,5 +10,5 @@ export function Default() {
         <Outlet />
       </div>
     </div>
-  )
+  );
 }
