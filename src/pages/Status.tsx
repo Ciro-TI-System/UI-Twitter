@@ -1,8 +1,10 @@
 import { useState, FormEvent, KeyboardEvent } from "react";
+import { PaperPlaneRight } from "phosphor-react";
 import { Header } from "../components/Header";
 import { Separator } from "../components/Separator";
 import { Tweet } from "../components/Tweet";
 import "./Status.css";
+
 
 /* Fluxo de renderização:
 
@@ -60,7 +62,10 @@ export function Status() {
             }}
           />
         </label>
-        <button type="submit">Answer</button>
+        <button type="submit">
+          <PaperPlaneRight />
+          <span>Answer</span>
+        </button>
       </form>
 
       {answers.map((answer) => {
