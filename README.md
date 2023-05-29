@@ -21,7 +21,7 @@ Construindo uma de um clone da interface de usuário (UI) do Twitter utilizando 
 <h2>Modo Responsivo</h2>
 <p>
   <img width="45%" src=".github/Twitter-UI-Home-Responsive.jpg" />
-<img align='right' width="45%" src=".github/Twitter-UI-Messages-Responsive.jpg" />
+  <img align='right' width="45%" src=".github/Twitter-UI-Messages-Responsive.jpg" />
 </p>
 
 <br/>
