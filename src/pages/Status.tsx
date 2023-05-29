@@ -1,8 +1,21 @@
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, KeyboardEvent } from "react";
 import { Header } from "../components/Header";
 import { Separator } from "../components/Separator";
 import { Tweet } from "../components/Tweet";
 import "./Status.css";
+
+/* Fluxo de renderização:
+
+ 1-Toda vez que alteramos o estado de um componente,, TODO componente é recalculado;
+ 2-Toda vez que o seu componente PAI renderizar;
+ 3-Toda vez que alguma das suas propriedades mudarem.*/
+
+/*Algoritmo de reconciliação:
+
+ 1-Criar em memória a nova versão do HTML do componente;
+ 2-Compara essa nova versão com a versão anterior do HTML (Diff);
+ 3-Aplicar as operações Javascript para alterar somente o necessário no HTML.
+ */
 
 export function Status() {
   const [newAnswer, setNewAnswer] = useState("");
@@ -17,6 +30,13 @@ export function Status() {
 
     setAnswers([newAnswer, ...answers]);
     setNewAnswer("");
+  }
+
+  function handleHotKeySubmit(event: KeyboardEvent) {
+    if (event.key === "Enter" && event.ctrlKey) {
+      setAnswers([newAnswer, ...answers]);
+      setNewAnswer("");
+    }
   }
 
   return (
@@ -34,6 +54,7 @@ export function Status() {
             id="tweet"
             placeholder="Tweet your answer"
             value={newAnswer}
+            onKeyDown={handleHotKeySubmit}
             onChange={(event) => {
               setNewAnswer(event.target.value);
             }}
