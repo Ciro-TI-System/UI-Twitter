@@ -7,14 +7,24 @@ Construindo uma de um clone da interface de usuário (UI) do Twitter utilizando 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
+<br/>
 
-<br>
-
+<h2>Modo Padrão</h2>
 <p align="center">
-  <img width="400" src="https://user-images.githubusercontent.com/2254731/219364698-e4281309-b996-4de9-8aa7-8db5df9370ba.png" />
+  <img width="100%" src=".github/Twitter-UI-Home.jpg" />
+</p>
+<p align="center">
+  <img width="100%" src=".github/Twitter-UI-Messages.jpg" />
+</p>
+<br/>
+
+<h2>Modo Responsivo</h2>
+<p>
+  <img width="45%" src=".github/Twitter-UI-Home-Responsive.jpg" />
+<img align='right' width="45%" src=".github/Twitter-UI-Messages-Responsive.jpg" />
 </p>
 
-<br>
+<br/>
 
 ## 🚀 Tecnologias
 
